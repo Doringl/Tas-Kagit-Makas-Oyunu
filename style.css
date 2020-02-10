@@ -14,17 +14,17 @@ h4 {
     font-size: 24px;
 }
 h2 {
-    font-size: 32px !important;
+    text-align: center;
+    font-size: 32px;
 }
-h2, p, footer {
+p, footer {
     text-align: center;
     margin: 20px;
-    font-family: sans-serif;
     font-size: 24px;
 }
 .score-board {
     border: black solid 2px;
-    width: 20%;
+    width: 224px;
     text-align: center;
     padding: 15px 20px;
     margin: 20px auto;
@@ -38,12 +38,12 @@ h2, p, footer {
 }
 #user-badge {
     position: absolute;
-    margin-left: -74px;
+    margin-left: -80px;
     margin-top: 32px;
 }
 #computer-badge {
     position: absolute;
-    margin-left: 254px;
+    margin-left: 174px;
     margin-top: 32px;
 }
 .user-span {
@@ -60,7 +60,7 @@ h2, p, footer {
     grid-template-columns: 140px 140px 140px;
     justify-content: center;
     align-content: center;
-    margin-top: 140px;
+    margin-top: 40px;
 }
 img {
     width: 140px;
@@ -73,4 +73,62 @@ img:hover {
     cursor: pointer;
     background-color: gray;
     transition: 0.4s ease-in-out;
+}
+
+#theme-button {
+    background-color: black;
+    color: white;
+    margin-left: 94%;
+    width: 80px;
+    height: 24px;
+    font-size: initial;
+    border: none;
+}
+
+#theme-button:hover {
+    cursor: pointer;
+}
+
+.toggle {
+    background-color: white !important;
+    color: black !important;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    border-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: medium !important;
+    }
+    h2 {
+        font-size: medium !important;
+    }
+    p, footer {
+        font-size: medium !important;
+    }
+    .grid-wrapper {
+        grid-template-columns: 94px 94px 94px !important;
+    }
+    img {
+        width: 94px !important;
+        height: 94px !important;
+    }
+    .badges {
+        width: 120px !important;
+        font-size: medium !important;
+    }
+    #user-badge {
+        margin-left: -70px !important;
+    }
+    #theme-button {
+        margin-left: 80% !important;
+        width: 74px !important;
+    }
 }
